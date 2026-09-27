@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign in to your ACTIVE member account." />
+    <title>Member sign in — ACTIVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body class="login-body">
+    <div class="noise" aria-hidden="true"></div>
+    <main class="login-shell">
+      <section class="login-poster" aria-labelledby="poster-title">
+        <a class="brand light-brand" href="index.html" aria-label="Back to Active home">
+          <span class="brand-mark"><i></i><i></i><i></i></span>
+          <span>ACTIVE<span class="brand-dot">.</span></span>
+        </a>
+        <div class="poster-copy">
+          <p class="poster-kicker"><span></span> MEMBER PORTAL</p>
+          <h1 id="poster-title">Your next<br />good idea is<br /><em>waiting.</em></h1>
+          <p>Pick up a project, find your next event, or just see what the community is building.</p>
+        </div>
+        <div class="poster-footer">
+          <div class="member-miniatures" aria-hidden="true"><i>M</i><i>K</i><i>S</i><i>A</i></div>
+          <span>2,400+ builders<br />in the community</span>
+        </div>
+        <div class="poster-orbit orbit-a"></div>
+        <div class="poster-orbit orbit-b"></div>
+        <span class="poster-spark spark-one">✳</span><span class="poster-spark spark-two">↗</span>
+      </section>
+
+      <section class="login-panel" aria-labelledby="login-title">
+        <a class="back-home" href="index.html"><span>←</span> Back to website</a>
+        <div class="login-content">
+          <div class="login-heading">
+            <p class="eyebrow"><span class="pulse"></span>MEMBER ACCESS</p>
+            <h2 id="login-title">Welcome back.</h2>
+            <p>Sign in to continue to your ACTIVE account.</p>
+          </div>
+          <button class="sso-button" id="sso-button" type="button">
+            <span class="google-mark" aria-hidden="true">G</span> Continue with Google
+          </button>
+          <div class="or-divider"><span>OR CONTINUE WITH EMAIL</span></div>
+          <form class="login-form" id="login-form" novalidate>
+            <label for="member-email">University email</label>
+            <div class="input-wrap"><input id="member-email" name="email" type="email" autocomplete="email" placeholder="you@northstar.edu" required /><span class="field-icon">@</span></div>
+            <p class="field-error" id="email-error"></p>
+            <div class="password-label"><label for="member-password">Password</label><a href="#reset" id="reset-link">Forgot password?</a></div>
+            <div class="input-wrap"><input id="member-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="8" /><button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button></div>
+            <p class="field-error" id="password-error"></p>
+            <label class="remember"><input id="remember" type="checkbox" /><span></span> Keep me signed in on this device</label>
+            <button class="button button-dark submit-button" type="submit">Sign in <span>→</span></button>
+            <p class="login-message" role="status" aria-live="polite"></p>
+          </form>
+          <p class="new-member">New around here? <a href="index.html#join">Create a free member account <span>→</span></a></p>
+        </div>
+        <p class="privacy-note">Protected member access · <a href="index.html">Need help?</a></p>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>
